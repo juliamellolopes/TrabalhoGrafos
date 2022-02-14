@@ -22,12 +22,14 @@ Para copilar, abra uma das pastas e rode
 Esse tipo de representação consiste em uma matriz N x N ( ADJ[N][N] ), na qual N é o número de vértices do grafo. As posições (i,j) da matriz representam se há ou não ligação entre os vétices indicados. Suponha que exista um grafo G, tal que G contenha pelo menos dois ou mais vértices, um vértice X(origem) e um vértice Y(destino), caso o valor contido na matirz ADJ na posição: ADJ[X][Y] for igual a 1, significa há uma aresta que parte de X e incide em Y.
 
 A pasta matriz adjacente contem um arquivo que contem os dados do para criar o grafo chamado "input.txt", o codigo da matgriz se encontra em Adj.h. Ao copilar e executar o código de Matriz Adjacencia epesra-se com a leitura de "input.txt" obtem-se o seguinte resultado:
+
 ![image](https://user-images.githubusercontent.com/84408875/153783321-1a7013d4-13dc-4a3d-89a1-709dedcc288c.png)
 
 ### MatrizIncidencia
 Esse tipo de representação consiste em uma matriz N x M (INC[N][M]), na qual N é o número de vértices e M o número de arestas do grafo. As posições (i,j) da matriz representa se há ou não incidencia da aresta no vétice indicado. Diferente da matriz de ajacência as conxões na matriz de incidência são representadas pelas colunas. Suponha que exista um grafo G, tal que G contenha pelo menos dois ou mais vértices, um vértice X(origem) e um vértice Y(destino), caso haja uma aresta J que parte de X e incide em Y a representação na matriz será indicada da seguinte forma: INC[X][J] = -1 e INC[Y][J] = 1. Dessa forma cada coluna contem somente no máximo 2 valores, -1 para idicar a origem da aresta e 1 para indicar o destino.
 
 Na pasta da matriz de incidencia contem um arquivo que contem os dados do para criar o grafo chamado "input.txt", o codigo fica se encontra em Inc.h.  Ao copilar e executar o código de Matriz Incidencia epesra-se com a leitura de "input.txt" obtem-se o seguinte resultado:
+
 ![image](https://user-images.githubusercontent.com/84408875/153783523-5d02beee-ee81-4937-a044-df023eef87b0.png)
 
 ### BFS
@@ -180,8 +182,11 @@ As alterações aqui também se resumem a função: DFS_VISIT(), para percorrer 
 
     }
     
+   
 ### Resultados
+
 Como o grafo inserido nos dois casos é o mesmo os resultados obtidos também serão iguais:
+
 ![image](https://user-images.githubusercontent.com/84408875/153783818-878d5a44-be61-4876-85f7-5feaa2ce2925.png)
 
 A atividade contempla uma comparação entre os métodos de busca e as estruturas apresentadas. Para isso fora realizado testes com grafos esparsos com cerca de 100 vértices e grafos densos com cerca de 10000 vértices. As comparações serão baseadas em tempo para execução e consumo de memória RAM de cada estrutura. A codificação para gerar as entradas aleatórias de grafos para as funções se encontram no main de cada uma. Para realizar medições de tempo foi usada as funções da biblioteca: < time.h > e para medir o consumo de memória RAM utilizou-se o seguinte comando no terminal:
@@ -191,10 +196,12 @@ A atividade contempla uma comparação entre os métodos de busca e as estrutura
 Os Resultados obtidos foram:
 
 Matriz Adjacente:
+
 ![image](https://user-images.githubusercontent.com/84408875/153784003-de716c19-c1c1-4990-b68f-8c722dbb7483.png)
 ![image](https://user-images.githubusercontent.com/84408875/153784007-284a2941-2977-43dc-88f5-124dd6c8a3c0.png)
 
 Matriz Incidente:
+
 ![image](https://user-images.githubusercontent.com/84408875/153784027-4202f4c5-5f62-4918-9212-34b3e15f40b7.png)
 ![image](https://user-images.githubusercontent.com/84408875/153784032-abef7d1c-5718-4655-b277-228ddafe519f.png)
 
